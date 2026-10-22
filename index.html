@@ -3,73 +3,302 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Política de Privacidad - GasAhorro: Gasolina Barata</title>
+    <title>Política de Privacidad y Términos | GasAhorro: Gasolina Barata</title>
+    <meta name="description" content="Política de Privacidad, Términos y Condiciones de uso de la aplicación móvil GasAhorro: Gasolina Barata.">
     <style>
+        :root {
+            --primary: #059669;
+            --primary-dark: #047857;
+            --primary-light: #ecfdf5;
+            --text-main: #1f2937;
+            --text-muted: #4b5563;
+            --bg-body: #f9fafb;
+            --bg-card: #ffffff;
+            --border: #e5e7eb;
+            --warning-bg: #fffbeb;
+            --warning-border: #fef3c7;
+            --warning-text: #92400e;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
         body {
             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-            line-height: 1.6;
-            color: #1e293b;
-            background-color: #f8fafc;
-            margin: 0;
-            padding: 20px;
+            line-height: 1.65;
+            color: var(--text-main);
+            background-color: var(--bg-body);
+            padding: 24px 16px;
         }
+
         .container {
-            max-width: 800px;
+            max-width: 860px;
             margin: 0 auto;
-            background: #ffffff;
-            padding: 36px 32px;
-            border-radius: 12px;
-            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.08);
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 16px;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -2px rgba(0, 0, 0, 0.05);
+            padding: 40px 32px;
         }
-        h1 { color: #0f172a; font-size: 26px; margin-bottom: 8px; }
-        h2 { color: #0369a1; font-size: 19px; margin-top: 28px; border-bottom: 1px solid #e2e8f0; padding-bottom: 6px; }
-        h3 { color: #0f766e; font-size: 16px; margin-top: 18px; }
-        p, li { font-size: 15px; color: #334155; }
-        ul { padding-left: 20px; }
-        .meta { color: #64748b; font-size: 14px; margin-bottom: 24px; }
+
+        @media (max-width: 640px) {
+            .container {
+                padding: 24px 20px;
+                border-radius: 12px;
+            }
+        }
+
+        header {
+            border-bottom: 2px solid var(--border);
+            padding-bottom: 24px;
+            margin-bottom: 32px;
+        }
+
         .badge {
             display: inline-block;
-            background: #e0f2fe;
-            color: #0369a1;
-            padding: 3px 10px;
-            border-radius: 6px;
-            font-weight: 600;
-            font-size: 13px;
+            background-color: var(--primary-light);
+            color: var(--primary-dark);
+            font-size: 0.85rem;
+            font-weight: 700;
+            padding: 4px 12px;
+            border-radius: 9999px;
+            margin-bottom: 12px;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        h1 {
+            font-size: 2rem;
+            color: #111827;
+            font-weight: 800;
+            margin-bottom: 12px;
+            line-height: 1.25;
+        }
+
+        .meta-info {
+            font-size: 0.95rem;
+            color: var(--text-muted);
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 8px;
+            margin-top: 16px;
+            background-color: #f3f4f6;
+            padding: 12px 16px;
+            border-radius: 8px;
+        }
+
+        h2 {
+            font-size: 1.35rem;
+            color: #111827;
+            font-weight: 700;
+            margin-top: 36px;
+            margin-bottom: 14px;
+            padding-bottom: 8px;
+            border-bottom: 1px solid var(--border);
+        }
+
+        h3 {
+            font-size: 1.1rem;
+            color: #1f2937;
+            font-weight: 700;
+            margin-top: 20px;
+            margin-bottom: 8px;
+        }
+
+        p {
+            margin-bottom: 16px;
+            color: var(--text-main);
+        }
+
+        ul {
+            margin-bottom: 18px;
+            padding-left: 24px;
+        }
+
+        li {
+            margin-bottom: 8px;
+            color: var(--text-main);
+        }
+
+        li strong {
+            color: #111827;
+        }
+
+        .alert-box {
+            background-color: var(--warning-bg);
+            border-left: 4px solid #f59e0b;
+            padding: 18px;
+            border-radius: 0 8px 8px 0;
+            margin: 24px 0;
+            color: var(--warning-text);
+        }
+
+        .alert-box h3 {
+            color: #b45309;
+            margin-top: 0;
+            margin-bottom: 8px;
+        }
+
+        .card-feature {
+            background-color: #fafafa;
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: 16px;
+            margin-bottom: 16px;
+        }
+
+        a {
+            color: var(--primary);
+            text-decoration: underline;
+        }
+
+        a:hover {
+            color: var(--primary-dark);
+        }
+
+        footer {
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid var(--border);
+            font-size: 0.88rem;
+            color: var(--text-muted);
+            text-align: center;
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <h1>Política de Privacidad</h1>
-        <div class="meta">
-            <strong>Aplicación:</strong> GasAhorro: Gasolina Barata (<span class="badge">com.headstar.gas</span>)<br>
-            <strong>Última actualización:</strong> 21 de octubre de 2026
+
+<div class="container">
+    <header>
+        <span class="badge">Documento Oficial de Privacidad</span>
+        <h1>Política de Privacidad y Condiciones de Servicio</h1>
+        <p><strong>GasAhorro: Gasolina Barata</strong></p>
+        
+        <div class="meta-info">
+            <div><strong>Aplicación:</strong> GasAhorro (`com.headstar.gas`)</div>
+            <div><strong>Última actualización:</strong> 22 de octubre de 2026</div>
+            <div><strong>Titular:</strong> HeadStar Apps</div>
+            <div><strong>Contacto:</strong> soporte@headstar.com</div>
+        </div>
+    </header>
+
+    <section>
+        <h2>1. Introducción y Compromiso</h2>
+        <p>
+            La presente Política de Privacidad describe cómo <strong>GasAhorro: Gasolina Barata</strong> (en adelante, «la Aplicación») recopila, utiliza y protege la información de sus usuarios. Nos comprometemos a garantizar la máxima transparencia, privacidad y seguridad de sus datos personales conforme al Reglamento General de Protección de Datos de la Unión Europea (RGPD / GDPR) y a las políticas para desarrolladores de Google Play.
+        </p>
+        <p>
+            La Aplicación ha sido desarrollada bajo el principio de minimización de datos: no requiere registro de cuenta, no solicita datos identificativos personales y procesa la información de forma local en tu dispositivo siempre que es posible.
+        </p>
+    </section>
+
+    <section>
+        <h2>2. Tratamiento de Datos y Funcionalidades</h2>
+
+        <div class="card-feature">
+            <h3>a) Datos de Ubicación Geográfica (GPS y Red)</h3>
+            <ul>
+                <li><strong>Datos recopilados:</strong> Coordenadas de latitud y longitud del dispositivo.</li>
+                <li><strong>Finalidad:</strong> Calcular la distancia exacta a las estaciones de servicio más cercanas, ordenar los precios por cercanía, centrar el mapa interactivo y alimentar el widget de inicio.</li>
+                <li><strong>Almacenamiento local:</strong> La ubicación se almacena exclusivamente de forma local en el dispositivo (SharedPreferences) para permitir la actualización de alertas y widget sin requerir permisos invasivos de ubicación en segundo plano continuo.</li>
+                <li><strong>Sin rastreo:</strong> Sus coordenadas <strong>nunca</strong> se envían ni se guardan en servidores propios ni se comparten con terceros con fines de perfilado, publicidad o venta.</li>
+            </ul>
         </div>
 
-        <h2>1. Introducción y Compromiso</h2>
-        <p>La presente Política de Privacidad describe cómo <strong>GasAhorro: Gasolina Barata</strong> recopila, utiliza y protege la información de los usuarios. Nos comprometemos a garantizar la privacidad conforme al Reglamento General de Protección de Datos de la Unión Europea (RGPD / GDPR) y las políticas para desarrolladores de Google Play.</p>
+        <div class="card-feature">
+            <h3>b) Publicidad y Redes de Anuncios (Google AdMob)</h3>
+            <ul>
+                <li><strong>Proveedor:</strong> Google LLC (Google AdMob).</li>
+                <li><strong>Finalidad:</strong> La versión gratuita de la aplicación se financia mediante publicidad para sufragar costes de desarrollo y mantenimiento.</li>
+                <li><strong>Datos tratados:</strong> Identificador de publicidad de Android (GAID), datos de diagnóstico y dirección IP según las políticas de privacidad de Google.</li>
+                <li><strong>Consentimiento europeo (RGPD):</strong> Para usuarios del Espacio Económico Europeo (EEE) y Reino Unido, la Aplicación integra la plataforma oficial de consentimiento de Google (User Messaging Platform - UMP), permitiendo aceptar o configurar libremente el uso de cookies y personalización de anuncios.</li>
+                <li><strong>Política de Google:</strong> <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">https://policies.google.com/privacy</a></li>
+            </ul>
+        </div>
 
-        <h2>2. Datos que Recopila la Aplicación y Finalidad</h2>
-        <h3>a) Ubicación Geográfica (GPS y Red)</h3>
-        <p>La Aplicación solicita acceso a la ubicación precisa y aproximada exclusivamente mientras está en uso con el fin de calcular la distancia a las gasolineras cercanas, ordenar los precios por cercanía y mostrar las estaciones en el mapa interactivo. La última posición conocida se almacena <strong>únicamente en la memoria local del dispositivo</strong> (no se transfiere a ningún servidor externo).</p>
+        <div class="card-feature">
+            <h3>c) Notificaciones Locales y Alertas</h3>
+            <ul>
+                <li><strong>Permiso requerido:</strong> <code>android.permission.POST_NOTIFICATIONS</code> (Android 13 o superior).</li>
+                <li><strong>Finalidad:</strong> Enviar avisos locales cuando el combustible seleccionado baje del precio configurado por el usuario o el resumen diario de ahorro.</li>
+                <li><strong>Tratamiento:</strong> Las alertas se procesan íntegramente de manera local en el teléfono a través de WorkManager. No se transmiten datos a servidores externos para esta funcionalidad.</li>
+            </ul>
+        </div>
 
-        <h3>b) Publicidad (Google AdMob)</h3>
-        <p>La versión gratuita muestra anuncios de Google AdMob. Se integra el formulario oficial de consentimiento (User Messaging Platform de Google) para que los usuarios del Espacio Económico Europeo puedan gestionar libremente sus preferencias de publicidad personalizada o no personalizada conforme al RGPD.</p>
+        <div class="card-feature">
+            <h3>d) Compras dentro de la Aplicación (Google Play Billing)</h3>
+            <ul>
+                <li><strong>Proveedor:</strong> Google Play Billing (Google LLC).</li>
+                <li><strong>Productos gestionados:</strong> «Quitar anuncios» (ID: <code>no_ads</code>) y «Pack Android Auto + Sin Anuncios» (ID: <code>auto</code>).</li>
+                <li><strong>Tratamiento:</strong> Todos los pagos son gestionados íntegramente por los servidores seguros de Google Play. El desarrollador no tiene en ningún caso acceso a números de tarjeta, cuentas bancarias ni datos financieros del usuario.</li>
+            </ul>
+        </div>
 
-        <h3>c) Notificaciones Locales</h3>
-        <p>Los avisos diarios de precios y las alertas personalizadas se programan y ejecutan localmente en el propio terminal mediante el gestor del sistema (WorkManager), sin recopilar ni transmitir datos personales.</p>
+        <div class="card-feature">
+            <h3>e) Consulta de Datos Públicos Oficiales</h3>
+            <p>
+                La Aplicación se conecta a los servicios de datos abiertos del <strong>Ministerio para la Transición Ecológica y el Reto Demográfico del Gobierno de España (MITECO)</strong> para consultar los precios oficiales vigentes de los carburantes en estaciones de servicio de todo el territorio nacional. En estas peticiones no se transmite ningún dato identificativo del usuario.
+            </p>
+        </div>
 
-        <h3>d) Compras en la Aplicación (Google Play Billing)</h3>
-        <p>Las compras para eliminar la publicidad son procesadas exclusivamente por la plataforma segura de Google Play. No tenemos acceso a los datos bancarios ni de tarjetas de crédito del usuario.</p>
+        <!-- Cláusula legal explícita requerida -->
+        <div class="alert-box">
+            <h3>f) Exención de Responsabilidad sobre Datos Oficiales y Política de No Reembolso</h3>
+            <p>
+                <strong>Origen de los datos:</strong> Toda la información sobre estaciones de servicio, precios de venta al público y horarios procede exclusivamente de las fuentes de datos abiertos suministradas por el Ministerio para la Transición Ecológica y el Reto Demográfico (MITECO) del Gobierno de España.
+            </p>
+            <p>
+                <strong>Exención de responsabilidad:</strong> GasAhorro actúa como visor y comparador independiente. El desarrollador <strong>no se hace responsable</strong> de posibles inexactitudes en los precios comunicados por las gasolineras al Ministerio, de retrasos en las actualizaciones, caídas temporales de los servidores ministeriales, ni de la interrupción o cese definitivo en la publicación de dichos datos abiertos por parte del organismo oficial.
+            </p>
+            <p>
+                <strong>Política de No Reembolso de Productos Únicos:</strong> Las compras de productos únicos dentro de la aplicación («Quitar anuncios» - ID: <code>no_ads</code> y «Pack Android Auto + Sin Anuncios» - ID: <code>auto</code>) son de pago único y definitivas. <strong>En ningún caso se devolverá el dinero ni se realizarán reembolsos</strong> si los servicios de datos del Ministerio fallan, sufren cortes, se suspenden o el organismo público deja de publicar la información de carburantes, al tratarse de causas de fuerza mayor externas y completamente ajenas a esta aplicación.
+            </p>
+        </div>
+    </section>
 
-        <h2>3. Consulta de Datos Públicos Oficiales</h2>
-        <p>Los precios de carburante se obtienen directamente de los servicios de datos abiertos del <strong>Ministerio para la Transición Ecológica y el Reto Demográfico del Gobierno de España</strong> (MITECO). Ningún dato del usuario se envía en estas peticiones.</p>
+    <section>
+        <h2>3. Base Jurídica del Tratamiento</h2>
+        <ul>
+            <li><strong>Consentimiento del usuario:</strong> Otorgado para los permisos de ubicación, notificaciones y la personalización de publicidad a través de los diálogos del sistema y del formulario UMP.</li>
+            <li><strong>Ejecución del servicio:</strong> Necesario para consultar los precios oficiales cercanos a tu posición y gestionar el desbloqueo de las compras solicitadas por el usuario.</li>
+        </ul>
+    </section>
 
-        <h2>4. Seguridad y Control del Usuario</h2>
-        <p>Puedes revocar los permisos de ubicación y notificaciones en cualquier momento desde los <em>Ajustes de Android &gt; Aplicaciones &gt; GasAhorro</em>. Al desinstalar la app, se eliminan todos los datos y favoritos almacenados localmente.</p>
+    <section>
+        <h2>4. Conservación y Seguridad de los Datos</h2>
+        <p>
+            No mantenemos servidores propios ni bases de datos con información personal de nuestros usuarios. Todas las preferencias de la aplicación (gasolineras favoritas, radio en kilómetros, tipo de combustible preferido y alertas de precio) se guardan <strong>únicamente en el almacenamiento privado de tu propio dispositivo</strong>.
+        </p>
+        <p>
+            Si desinstalas la aplicación o borras sus datos desde los Ajustes de Android, toda tu configuración se eliminará inmediatamente de forma permanente.
+        </p>
+    </section>
 
-        <h2>5. Contacto</h2>
-        <p>Para cualquier consulta relativa a la privacidad: <strong>support.dm.101@gmail.com</strong></p>
-    </div>
+    <section>
+        <h2>5. Derechos del Usuario (ARCO)</h2>
+        <p>Conforme a la normativa europea de protección de datos, tienes derecho a:</p>
+        <ul>
+            <li><strong>Revocar permisos en cualquier momento:</strong> Puedes desactivar los permisos de ubicación o de notificaciones desde los Ajustes de tu teléfono (<em>Ajustes > Aplicaciones > GasAhorro > Permisos</em>).</li>
+            <li><strong>Modificar tus preferencias de privacidad publicitaria:</strong> Puedes restablecer tu identificador publicitario desde los Ajustes de Google de tu terminal o a través del formulario de opciones de consentimiento en la aplicación.</li>
+            <li><strong>Atención al usuario:</strong> Para cualquier consulta relacionada con la privacidad o los términos de la aplicación, puedes escribir a: <a href="mailto:soporte@headstar.com">soporte@headstar.com</a>.</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>6. Modificaciones de esta Política</h2>
+        <p>
+            Nos reservamos el derecho a actualizar la presente Política de Privacidad y Términos para adaptarla a futuras actualizaciones legislativas, regulatorias o mejoras funcionales en la aplicación. La versión vigente estará siempre disponible para su consulta pública en esta dirección.
+        </p>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 GasAhorro - Todos los derechos reservados.</p>
+        <p>Datos de carburantes suministrados bajo licencia de datos abiertos por el Ministerio para la Transición Ecológica y el Reto Demográfico (MITECO).</p>
+    </footer>
+</div>
+
 </body>
 </html>
